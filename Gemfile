@@ -47,3 +47,4 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
+gem 'paranoia', '~> 2.1', '>= 2.1.5'
