@@ -38,6 +38,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  
 end
 
 group :development do
@@ -45,6 +46,9 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem 'graphiql-rails'
 end
 
+gem 'graphql'
 gem 'paranoia', '~> 2.1', '>= 2.1.5'
+gem "sprockets-rails", "~> 3.4"
