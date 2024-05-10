@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :people
   resources :products
+  resources :categories
 
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "graphql#execute"
