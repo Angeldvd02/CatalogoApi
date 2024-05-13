@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   def create
     @products = Product.new(product_params)
 
-    if @products.save
+    if @product.save
       render json: @products, status: :created, location: @products
     else
       render json: @products.errors, status: :unprocessable_entity
@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
 
   # PATCH/PUT /product/1
   def update
-    if @product.update(product_params)
+    if @products.update(product_params)
       render json: @products
     else
       render json: @products.errors, status: :unprocessable_entity
@@ -41,12 +41,12 @@ class ProductsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
-      @products = Product.find(params[:id])
+      @products= Product.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:name, :description, :stock, :price, :state, :category_id)
+      params.require(:product).permit(:name,:description, :stock, :price, :state , :category_id)
     end    
   end
   
