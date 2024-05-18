@@ -13,9 +13,12 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :category, Types::CategoryType, null: false
-
+    field :comments, [Types::CommentType], null: false
     def category
-      object.category
+    object.category
+    end
+    def comments
+      object.comments
     end
   end
 end

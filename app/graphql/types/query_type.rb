@@ -30,5 +30,7 @@ module Types
     field :categories, resolver: Queries::FetchCategories
     field :products, resolver: Queries::FetchProducts
     field :comments, resolver: Queries::FetchComments
+    field :images, resolver: Queries::FetchImages
+
   end
 end
