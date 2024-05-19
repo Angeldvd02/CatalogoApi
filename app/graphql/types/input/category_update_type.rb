@@ -1,7 +1,7 @@
 module Types
     module Input
-      class CategoryInputType < Types::BaseInputObject
-        
+      class CategoryUpdateType < Types::BaseInputObject
+        argument :id, ID
         argument :name, String
       end
     end

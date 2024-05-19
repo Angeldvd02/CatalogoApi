@@ -1,7 +1,7 @@
 module Types
     module Input
-      class CommentInputType < Types::BaseInputObject
-        
+      class CommentUpdateType < Types::BaseInputObject
+        argument :id, ID
         argument :comment, String
         argument :product_id, String 
       end
