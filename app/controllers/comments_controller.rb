@@ -43,6 +43,6 @@ class CommentsController < ApplicationController
       @comments = Comment.find(params[:id])
     end
     def comment_params
-      params.require(:comment).permit(:text, :product_id)
+      params.require(:comment).permit(:comment, :product_id)
     end      
 end

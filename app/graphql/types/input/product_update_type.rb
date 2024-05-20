@@ -1,7 +1,7 @@
 module Types
     module Input
-      class ProductInputType < Types::BaseInputObject
-        
+      class ProductUpdateType < Types::BaseInputObject
+        argument :id, ID
         argument :name, String
         argument :description, String
         argument :stock, Integer
