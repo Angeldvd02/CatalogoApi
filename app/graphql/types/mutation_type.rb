@@ -9,6 +9,9 @@ module Types
     field :update_category, mutation: Mutations::UpdateCategory
     field :update_product, mutation: Mutations::UpdateProduct
     field :update_comment, mutation: Mutations::UpdateComment
+    field :delete_category, mutation: Mutations::DeleteCategory
+    field :delete_product, mutation: Mutations::DeleteProduct
+    field :delete_comment, mutation: Mutations::DeleteComment
     field :test_field, String, null: false,
       description: "An example field added by the generator"
     def test_field
