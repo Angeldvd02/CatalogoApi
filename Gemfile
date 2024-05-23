@@ -52,3 +52,5 @@ end
 gem 'graphql'
 gem 'paranoia', '~> 2.1', '>= 2.1.5'
 gem "sprockets-rails", "~> 3.4"
+
+gem "dockerfile-rails", ">= 1.6", :group => :development
