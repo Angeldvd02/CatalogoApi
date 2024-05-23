@@ -46,7 +46,7 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
-  gem 'graphiql-rails'
+  
 end
 
 gem 'graphql'
@@ -54,3 +54,4 @@ gem 'paranoia', '~> 2.1', '>= 2.1.5'
 gem "sprockets-rails", "~> 3.4"
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
+gem 'graphiql-rails'
