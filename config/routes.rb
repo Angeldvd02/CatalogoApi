@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   resources :categories
   resources :comments
 
-  if Rails.env.development?
+ # if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "graphql#execute"
-  end
+  #end
   post "/graphql", to: "graphql#execute"
   get "categories", to: "categories#index"
  
