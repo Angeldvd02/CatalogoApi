@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :products
   resources :categories
   resources :comments
-
+#este if es para meter el endpoint a desarrollo
  # if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "graphql#execute"
   #end
